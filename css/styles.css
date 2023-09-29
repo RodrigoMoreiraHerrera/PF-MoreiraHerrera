@@ -55,6 +55,10 @@
             }
         }
 
+        .img-car-uno {
+            max-width: 100%;
+        }
+
 
         /*@media (max-width: 577px) {
             .car-uno.active  {
