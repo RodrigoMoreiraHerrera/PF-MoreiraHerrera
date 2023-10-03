@@ -1,0 +1,19 @@
+.card-productos {
+    
+    .btn {
+        color: $color-primario;
+        border-color: $color-primario;
+        background-color: $color-fondo;
+            &:hover {
+                color: $color-fondo;
+                background-color: $color-primario;
+                border-color: $color-primario;
+            }
+            &:active {
+                background-color: $color-click;
+                border-color: $color-click;
+            }
+    }
+    h5 {font-size: 1rem;}
+    p {font-size: .75rem;}
+}

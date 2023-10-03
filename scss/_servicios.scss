@@ -1,0 +1,32 @@
+.caja-serv {
+    display: flex;
+    flex-direction: row;
+        img {width: 200px; }
+}
+
+.sub-titulo {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.serv-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: $max-lg) {
+    .caja-serv {
+        img {width: 100px;}
+    }
+}
+
+@media (max-width: $max-md) {
+    .caja-serv {
+        display: flex;
+        flex-direction: column;
+    }
+}

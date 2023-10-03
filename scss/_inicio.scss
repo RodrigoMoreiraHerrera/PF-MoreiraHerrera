@@ -1,0 +1,81 @@
+.car-uno {
+        img {
+            height: 100%;
+        }
+        h5 {
+            font-size: 3rem;
+            font-weight: bolder;
+            color: $color-click;
+        }
+        p {
+            color: $color-click;
+            font-weight: bold;
+        }
+    }
+
+@media (max-width: $max-md) {
+    .car-uno { 
+        
+        h5 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 0.7rem;
+        }
+    }
+        
+}
+/*DESTACADOS*/
+
+.cards-destacados {
+    display: flex;
+
+}
+
+.card {
+    margin: 0 auto;
+    width: calc(90%/3);
+    border: none;
+    position:relative;
+        img {
+            max-width: 100%;
+        }
+        .btn {
+            color: $color-primario;
+            border-color: $color-primario;
+            background-color: $color-fondo;
+                &:hover {
+                    color: $color-fondo;
+                    background-color: $color-primario;
+                    border-color: $color-primario;
+                }
+                &:active {
+                    background-color: $color-click;
+                    border-color: $color-click;
+                }
+        }
+}
+
+.descuento {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    display:block;
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    z-index: 1;
+    padding: 3px;
+    font-family: 'Poor Story', cursive;
+}
+
+@media (max-width: $max-lg) {
+    .card:first-child {display: none;}
+    .card {margin: 0 auto;}
+}
+
+@media (max-width: 769px) {
+    .card:not(:last-child){display: none;}
+    .card {margin: 0 auto; width:75%;}
+}
+

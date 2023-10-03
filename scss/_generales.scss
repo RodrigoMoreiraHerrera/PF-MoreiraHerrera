@@ -1,0 +1,85 @@
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+
+        .logo_entero {
+            width:180px;
+        }
+
+        .nav-item {
+            font-weight: bold;
+        }
+
+        .btn {
+            color: $color-primario;
+            border-color: $color-primario;
+            background-color: $color-fondo;
+                &:hover {
+                    background-color: $color-primario;
+                    border-color: $color-primario;
+                }
+                &:active {
+                    background-color: $color-click;
+                    border-color: $color-click;
+                }
+        }
+    }
+
+    h2 {
+        @include titulos;
+    }
+
+@media (max-width: 400px) {
+    img.logo_entero {width: 140px;}
+}
+
+@media (max-width: $max-md) {
+    h2{font-size: 3rem;}
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: $color-primario;
+    color: $color-fondo;
+    width: 100%;
+    height: 200px;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+}
+
+.logos-redes {
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.leyendas-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: $max-lg) {
+    footer {height: 150px;}
+    .leyendas-footer {font-size: .8rem;}
+    .logos-redes {font-size: 30px;}
+}
+
+@media (max-width: $max-md) {
+    footer {height: 100px;}
+    .leyendas-footer {font-size: .4rem;}
+    .logos-redes {font-size: 20px;}
+}
