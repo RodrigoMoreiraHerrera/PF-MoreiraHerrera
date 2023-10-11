@@ -2,17 +2,27 @@
     text-align: center;
     margin-bottom: 200px;
 }
-.btn {
-    color: $color-primario;
-    border-color: $color-primario;
-    background-color: $color-fondo;
-        &:hover {
-            color: $color-fondo;
-            background-color: $color-primario;
-            border-color: $color-primario;
-        }
-        &:active {
-            background-color: $color-click;
-            border-color: $color-click;
-        }
+
+
+.mb-3 {
+    width: 50%;
+    margin: 0 auto;
+        textarea {height: 400px;}
+}
+
+
+
+.botones-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+@media (max-width: $max-lg) {
+    .mb-3 {width: 75%;}
+}
+
+@media (max-width: $max-md) {
+    .mb-3 {width: 85%;}
 }

@@ -32,6 +32,23 @@ header {
         @include titulos;
     }
 
+    .btn {
+        color: $color-primario;
+        border-color: $color-primario;
+        background-color: $color-fondo;
+            &:hover {
+                color: $color-fondo;
+                background-color: $color-primario;
+                border-color: $color-primario;
+            }
+            &:active {
+                background-color: $color-click !important;
+                border-color: $color-click !important;
+                color: $color-fondo !important;
+                
+            }
+    }
+
 @media (max-width: 400px) {
     img.logo_entero {width: 140px;}
 }

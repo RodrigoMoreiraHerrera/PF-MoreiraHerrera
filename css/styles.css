@@ -36,6 +36,22 @@ h2 {
   font-family: "Poor Story", cursive;
 }
 
+.btn {
+  color: #FF3333;
+  border-color: #FF3333;
+  background-color: white;
+}
+.btn:hover {
+  color: white;
+  background-color: #FF3333;
+  border-color: #FF3333;
+}
+.btn:active {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+  color: white !important;
+}
+
 @media (max-width: 400px) {
   img.logo_entero {
     width: 140px;
@@ -222,6 +238,13 @@ footer a {
   gap: 20px;
 }
 
+.btn-mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
 @media (max-width: 993px) {
   .caja-serv img {
     width: 100px;
@@ -238,19 +261,74 @@ footer a {
   margin-bottom: 200px;
 }
 
-.btn {
-  color: #FF3333;
-  border-color: #FF3333;
-  background-color: white;
+.mb-3 {
+  width: 50%;
+  margin: 0 auto;
 }
-.btn:hover {
-  color: white;
-  background-color: #FF3333;
-  border-color: #FF3333;
+.mb-3 textarea {
+  height: 400px;
 }
-.btn:active {
-  background-color: #ffc107;
-  border-color: #ffc107;
+
+.botones-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 993px) {
+  .mb-3 {
+    width: 75%;
+  }
+}
+@media (max-width: 577px) {
+  .mb-3 {
+    width: 85%;
+  }
+}
+.hist {
+  display: grid;
+  grid-template-areas: "parrafo1 parrafo1 img1 img1" "parrafo2 parrafo2 img1 img1" "img2 img2 parrafo3 parrafo3" "img2 img2 parrafo3 parrafo3" "parrafo4 parrafo4 parrafo4 parrafo4" "parrafo5 parrafo5 parrafo5 parrafo5";
+}
+
+.img1 {
+  grid-area: img1;
+}
+.img1 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img2 {
+  grid-area: img2;
+}
+.img2 img {
+  max-width: 100%;
+}
+
+.parrafo1 {
+  grid-area: parrafo1;
+  padding: 15px;
+}
+
+.parrafo2 {
+  grid-area: parrafo2;
+  padding: 15px;
+}
+
+.parrafo3 {
+  grid-area: parrafo3;
+  padding: 15px;
+}
+
+.parrafo4 {
+  grid-area: parrafo4;
+  padding: 15px;
+}
+
+.parrafo5 {
+  grid-area: parrafo5;
+  padding: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

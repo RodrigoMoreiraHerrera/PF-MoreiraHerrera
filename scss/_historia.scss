@@ -1,0 +1,54 @@
+
+
+.hist {
+    display: grid;
+    grid-template-areas: 
+    "parrafo1 parrafo1 img1 img1"
+    "parrafo2 parrafo2 img1 img1"
+    "img2 img2 parrafo3 parrafo3"
+    "img2 img2 parrafo3 parrafo3"
+    "parrafo4 parrafo4 parrafo4 parrafo4"
+    "parrafo5 parrafo5 parrafo5 parrafo5";
+    
+
+}
+
+.img1 {
+    grid-area: img1;
+        img {  object-fit: cover;
+                width:100%;
+                height:100%;}
+
+}
+
+.img2 {
+    grid-area: img2;
+        img {max-width: 100%;}
+}
+
+.parrafo1 {
+    grid-area: parrafo1;
+    padding: 15px;
+}
+
+.parrafo2 {
+    grid-area: parrafo2;
+    padding: 15px;
+}
+
+.parrafo3 {
+    grid-area: parrafo3;
+    padding: 15px;
+
+}
+
+.parrafo4 {
+    grid-area: parrafo4;
+    padding: 15px;
+}
+
+.parrafo5 {
+    grid-area: parrafo5;
+    padding: 15px;
+}
+

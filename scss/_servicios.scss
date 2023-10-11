@@ -18,6 +18,16 @@
     gap: 20px;
 }
 
+.btn-mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    
+    
+    
+}
+
 @media (max-width: $max-lg) {
     .caja-serv {
         img {width: 100px;}
