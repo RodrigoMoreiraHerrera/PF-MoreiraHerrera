@@ -9,7 +9,7 @@
     "img2 img2 parrafo3 parrafo3"
     "parrafo4 parrafo4 parrafo4 parrafo4"
     "parrafo5 parrafo5 parrafo5 parrafo5";
-    
+        
 
 }
 
@@ -52,3 +52,16 @@
     padding: 15px;
 }
 
+@media (max-width: $max-md) {
+    .hist {
+        grid-template-areas: 
+        "parrafo1"
+        "img1"
+        "parrafo2"
+        "parrafo3"
+        "img2"
+        "parrafo4"
+        "parrafo5"
+        ;
+    }
+}

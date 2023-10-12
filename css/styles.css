@@ -378,4 +378,10 @@ input[type=radio] {
   padding: 15px;
 }
 
+@media (max-width: 577px) {
+  .hist {
+    grid-template-areas: "parrafo1" "img1" "parrafo2" "parrafo3" "img2" "parrafo4" "parrafo5";
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
