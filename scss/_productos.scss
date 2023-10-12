@@ -1,5 +1,6 @@
 .card-productos {
-    
+    background-color: $color-fondo;
+    padding: 3%;
     .btn {
         color: $color-primario;
         border-color: $color-primario;
@@ -8,12 +9,48 @@
                 color: $color-fondo;
                 background-color: $color-primario;
                 border-color: $color-primario;
-            }
+                }
             &:active {
                 background-color: $color-click;
                 border-color: $color-click;
-            }
-    }
-    h5 {font-size: 1rem;}
-    p {font-size: .75rem;}
+                }
+        }
+            h5 {font-size: 1rem;}
+            p {font-size: .75rem;}
+    &:hover {
+        transform: scale(1.2,1.2);
+        }
+}
+
+input[type="radio"]{
+    display: none;
+    
+}
+
+
+.labels-filtro {
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    margin-top: 20px;
+        label {
+            padding: 6px 40px;
+            margin: 10px;
+            background: #e2e2e2;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+}
+
+[value="pc"]:checked ~ .caja-productos .card-productos:not([data-category~="pc"]),
+[value="acc"]:checked ~ .caja-productos .card-productos:not([data-category~="acc"]),
+[value="gamer"]:checked ~ .caja-productos .card-productos:not([data-category~="gamer"]),
+[value="hogar"]:checked ~ .caja-productos .card-productos:not([data-category~="hogar"])
+
+{
+    display:none;
 }

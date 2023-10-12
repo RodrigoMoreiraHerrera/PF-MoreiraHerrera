@@ -26,6 +26,9 @@ header .btn:active {
   background-color: #ffc107;
   border-color: #ffc107;
 }
+header .active {
+  color: #FF3333 !important;
+}
 
 h2 {
   font-size: 4rem;
@@ -128,6 +131,10 @@ footer a {
   font-weight: bold;
 }
 
+.carousel-caption {
+  background-color: hsla(0, 0%, 50%, 0.5);
+}
+
 @media (max-width: 577px) {
   .car-uno h5 {
     font-size: 2rem;
@@ -139,13 +146,18 @@ footer a {
 /*DESTACADOS*/
 .cards-destacados {
   display: flex;
+  padding: 5%;
 }
 
 .card {
   margin: 0 auto;
-  width: 30%;
+  width: 22.5%;
   border: none;
   position: relative;
+  z-index: 1;
+}
+.card:hover {
+  transform: scale(1.2, 1.2);
 }
 .card img {
   max-width: 100%;
@@ -195,6 +207,10 @@ footer a {
     width: 75%;
   }
 }
+.card-productos {
+  background-color: white;
+  padding: 3%;
+}
 .card-productos .btn {
   color: #FF3333;
   border-color: #FF3333;
@@ -214,6 +230,36 @@ footer a {
 }
 .card-productos p {
   font-size: 0.75rem;
+}
+.card-productos:hover {
+  transform: scale(1.2, 1.2);
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.labels-filtro {
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.labels-filtro label {
+  padding: 6px 40px;
+  margin: 10px;
+  background: #e2e2e2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+[value=pc]:checked ~ .caja-productos .card-productos:not([data-category~=pc]),
+[value=acc]:checked ~ .caja-productos .card-productos:not([data-category~=acc]),
+[value=gamer]:checked ~ .caja-productos .card-productos:not([data-category~=gamer]),
+[value=hogar]:checked ~ .caja-productos .card-productos:not([data-category~=hogar]) {
+  display: none;
 }
 
 .caja-serv {
@@ -273,6 +319,7 @@ footer a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 20px;
 }
 
 @media (max-width: 993px) {

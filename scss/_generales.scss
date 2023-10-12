@@ -11,6 +11,7 @@ header {
 
         .nav-item {
             font-weight: bold;
+
         }
 
         .btn {
@@ -26,6 +27,11 @@ header {
                     border-color: $color-click;
                 }
         }
+        
+        .active {
+                color: $color-primario !important;
+            }
+        
     }
 
     h2 {
