@@ -270,6 +270,10 @@ input[type=radio] {
   color: white;
   background: #FF3333;
 }
+.labels-filtro label:focus-within {
+  color: white;
+  background: #FF3333;
+}
 
 [value=pc]:checked ~ .caja-productos .card-productos:not([data-category~=pc]),
 [value=acc]:checked ~ .caja-productos .card-productos:not([data-category~=acc]),

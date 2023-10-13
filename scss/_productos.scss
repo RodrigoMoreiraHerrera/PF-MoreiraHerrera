@@ -53,6 +53,10 @@ input[type="radio"]{
                     color: $color-fondo;
                     background: $color-primario;
                 }
+                &:focus-within {
+                    color: $color-fondo;
+                    background: $color-primario;                    
+                }
         }
 }
 
