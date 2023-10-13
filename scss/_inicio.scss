@@ -90,3 +90,9 @@
     .card {margin: 0 auto; width:75%;}
 }
 
+@media (max-width: $max-md) {
+    .cards-destacados {
+        padding: 10%;
+    }
+    
+}

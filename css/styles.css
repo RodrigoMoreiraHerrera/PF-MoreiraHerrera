@@ -207,6 +207,11 @@ footer a {
     width: 75%;
   }
 }
+@media (max-width: 577px) {
+  .cards-destacados {
+    padding: 10%;
+  }
+}
 .card-productos {
   background-color: white;
   padding: 3%;
@@ -250,9 +255,20 @@ input[type=radio] {
 .labels-filtro label {
   padding: 6px 40px;
   margin: 10px;
-  background: #e2e2e2;
+  background: white;
+  color: #FF3333;
+  border-color: #FF3333;
+  /*border: solid;*/
   border-radius: 5px;
   cursor: pointer;
+}
+.labels-filtro label:active {
+  color: white;
+  background: #FF3333;
+}
+.labels-filtro label:hover {
+  color: white;
+  background: #FF3333;
 }
 
 [value=pc]:checked ~ .caja-productos .card-productos:not([data-category~=pc]),
@@ -350,7 +366,9 @@ input[type=radio] {
   grid-area: img2;
 }
 .img2 img {
-  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .parrafo1 {

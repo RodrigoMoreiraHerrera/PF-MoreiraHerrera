@@ -39,10 +39,20 @@ input[type="radio"]{
         label {
             padding: 6px 40px;
             margin: 10px;
-            background: #e2e2e2;
+            background: $color-fondo;
+            color: $color-primario;
+            border-color: $color-primario;
+            /*border: solid;*/
             border-radius: 5px;
             cursor: pointer;
-
+                &:active {
+                    color: $color-fondo;
+                    background: $color-primario;
+                }
+                &:hover {
+                    color: $color-fondo;
+                    background: $color-primario;
+                }
         }
 }
 
